@@ -12,16 +12,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: autoreconf
       run: autoreconf --install
-
-    - name: Enter build
-      run: cd build
-
+      
     - name: configure
-      run: ../configure
+      run: ./configure
 
     - name: Install dependencies
       run: make

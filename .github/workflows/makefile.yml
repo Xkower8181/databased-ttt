@@ -20,6 +20,8 @@ jobs:
     - name: Enter build
       run: cd build
 
+    - uses: actions/checkout@v2
+
     - name: configure
       run: ../configure
 

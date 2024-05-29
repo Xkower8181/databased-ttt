@@ -1,2 +1,5 @@
 .deps/
 Makefile.im
+Makefile
+databased_ttt
+*.o

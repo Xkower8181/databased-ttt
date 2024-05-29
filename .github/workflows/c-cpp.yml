@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: reconfigure
+      run: autoreconf --install
     - name: build_folder
       run: cd build
     - name: configure

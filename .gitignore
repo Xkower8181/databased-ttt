@@ -1,0 +1,12 @@
+.vs/
+x64/
+ttt_base.cpp
+*.o
+help
+TTTOOP
+keytest.cpp
+projekt.txt
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user

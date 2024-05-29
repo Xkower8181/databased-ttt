@@ -22,3 +22,10 @@ Thumbs.db
 *.sql
 *.sqlite
 databased_ttt
+configure
+configure~
+Makefile.in
+autom$te.cache/
+build-aux/
+aclocal.m4
+config.h.in

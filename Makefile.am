@@ -1,2 +1,2 @@
-bin_PROGRAMS = databased_ttt
-databased_ttt_SOURCES = Projekt_OOP.cpp
+SUBDIRS = src
+dist_doc_DATA = README.md

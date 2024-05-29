@@ -13,14 +13,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      if: github.event_name == 'pull_request'
+      with:
+        fetch-depth: 0
+        ref: ${{ github.event.pull_request.head.ref }}
+    - uses: actions/checkout@v4
+      if: github.event_name == 'push'
+      with:
+        fetch-depth: 0
 
     - name: autoreconf
       run: autoreconf --install
 
     - name: Enter build
       run: cd build
-
-    - uses: actions/checkout@v2
 
     - name: configure
       run: ../configure
